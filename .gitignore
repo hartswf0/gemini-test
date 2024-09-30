@@ -1,0 +1,12 @@
+# Node.js dependencies
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# IDE-specific files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
