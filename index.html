@@ -4,25 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini Chatbot</title>
-    <style>
-        #chat-container {
-            height: 400px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .message {
-            margin-bottom: 10px;
-        }
-        .user { color: blue; }
-        .bot { color: green; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="chat-container"></div>
     <input type="text" id="user-input" placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button>
+    <button id="send-button">Send</button>
 
-    <script src="chatbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dotenv@16.0.3/dist/dotenv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://unpkg.com/@tensorflow-models/universal-sentence-encoder"></script>
+    <script src="script.js"></script>
 </body>
 </html>
